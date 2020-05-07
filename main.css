@@ -1,0 +1,17 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+
+.main{
+    background-color: blueviolet;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+
+.page{
+    background-color: blanchedalmond;
+}
