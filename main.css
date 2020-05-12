@@ -45,12 +45,15 @@ header{
     padding: 2vh;
     text-decoration: none;
     color:black;
-    font-size: 25px;
 }
 
 .menu a:hover{
     font-weight: bold;
-    font-size: 30px;
+}
+
+.info{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 section {
@@ -58,7 +61,6 @@ section {
     flex-direction: column;
     align-items: center;
     background-color: #ffffff83;
-    width: 80vw;
     margin:auto;
 }
 
@@ -73,7 +75,6 @@ h2 {
 
 .portfolio-section figure {
     margin-bottom: 50px;
-    width: 90%;
     height: auto;
 }
 
@@ -87,4 +88,28 @@ h2 {
     margin:auto;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+@media (min-width: 500px) {
+    .menu a {
+        font-size: 24px;
+    }
+    .portfolio-section figure {
+        width: 90%;
+    }
+    section {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .menu a {
+        font-size: 14px;
+    }
+    .portfolio-section figure {
+        width: 98%;
+    }
+    section {
+        width: 98vw;
+    }
 }
