@@ -13,8 +13,8 @@ body{
     background-size: 100vw auto;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-family: 'Lucida Sans', sans-serif;
-    font-size: 20px;
+    font-family: 'Balsamiq Sans','Lucida Sans', sans-serif;
+    font-size: 26px;
 }
 
 header{
@@ -47,20 +47,27 @@ header{
     color:black;
 }
 
+.menu a:active,
 .menu a:hover{
-    font-weight: bold;
+    text-shadow: 0px 0px .5px black;
 }
 
 .info{
     margin-left: 10px;
     margin-right: 10px;
+    /* font-size: */
 }
 
-section {
+.opaque-page{
+    background-color: #ffffff83;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #ffffff83;
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
     margin:auto;
 }
 
@@ -71,14 +78,16 @@ h2 {
 
 .title {
     text-align: center;
+    font-family: 'Balsamiq Sans','Lucida Sans', sans-serif;
+    font-weight: bold;
 }
 
-.portfolio-section figure {
+.projects figure {
     margin-bottom: 50px;
     height: auto;
 }
 
-.portfolio-section img {
+.projects img {
     width: 100%;
     height: auto;
 }
@@ -86,6 +95,9 @@ h2 {
 .separation-dot {
     width: 1px;
     margin:auto;
+}
+
+header .separation-dot{
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -94,7 +106,7 @@ h2 {
     .menu a {
         font-size: 24px;
     }
-    .portfolio-section figure {
+    .projects figure {
         width: 90%;
     }
     section {
@@ -106,7 +118,7 @@ h2 {
     .menu a {
         font-size: 14px;
     }
-    .portfolio-section figure {
+    .projects figure {
         width: 98%;
     }
     section {
