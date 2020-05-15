@@ -13,7 +13,7 @@ body{
     background-size: 100vw auto;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-family: 'Balsamiq Sans','Lucida Sans', sans-serif;
+    font-family: 'Lucida Sans', sans-serif;
     font-size: 26px;
 }
 
@@ -38,6 +38,7 @@ header{
 
 .menu li{
     list-style: none;
+    font-family: 'Balsamiq Sans','Lucida Sans', sans-serif;
 }
 
 .menu a{
@@ -83,17 +84,43 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding:20px;
+}
+
+.about .avatar img{
+    width:300px;
+}
+
+.about .avatar{
+    float: right;
+    margin-left: 20px;
+}
+
+.about p{
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.experience-list {
+    list-style-position: inside;
+}
+
+.experience-list li {
+    text-align: justify;
+    margin-top: 20px;
 }
 
 section {
     padding-top: 100px;
     padding-bottom: 100px;
-    margin:auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h2 {
     margin-top: 10px;
     margin-bottom: 10px;
+    font-family: 'Balsamiq Sans','Lucida Sans', sans-serif;
 }
 
 .title {
@@ -147,5 +174,17 @@ h2 {
     }
     section {
         width: 98vw;
+    }
+}
+
+@media (max-width: 850px) {
+    .about .avatar{
+        float: none;
+        margin-left: 0;
+        display:flex;
+    }
+    .about .avatar img{
+        margin-left: auto;
+        margin-right: auto;
     }
 }
