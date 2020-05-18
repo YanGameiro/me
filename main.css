@@ -76,8 +76,14 @@ header{
 .info{
     margin-left: 10px;
     margin-right: 10px;
-    /* font-size: */
 }
+
+hr {
+    border-top: 1px solid #CCC;
+    width: 50%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 
 .opaque-page{
     background-color: #ffffff83;
@@ -95,6 +101,7 @@ header{
     float: right;
     margin-left: 20px;
 }
+
 
 .about p{
     text-align: justify;
@@ -128,17 +135,35 @@ h2 {
     font-family: 'Balsamiq Sans','Lucida Sans', sans-serif;
     font-weight: bold;
 }
-
-.projects figure {
-    margin-bottom: 50px;
-    height: auto;
-}
-
-.projects img {
+.full-size-img {
     width: 100%;
     height: auto;
 }
 
+.project-img-right{
+    display: flex;
+}
+
+.project-trivia{
+    display: flex;
+    flex-direction: column;
+}
+
+.trivia-imgs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.trivia-img{
+    width: 24%;
+    height: auto;
+}
+
+#me-dojo{
+    max-height: 400px;
+    width: auto;
+}
 .separation-dot {
     display: flex;
     flex-direction: column;
@@ -172,9 +197,6 @@ h2 {
     .menu a {
         font-size: 24px;
     }
-    .projects figure {
-        width: 90%;
-    }
     section {
         width: 80vw;
     }
@@ -183,9 +205,6 @@ h2 {
 @media (max-width: 500px) {
     .menu a {
         font-size: 14px;
-    }
-    .projects figure {
-        width: 98%;
     }
     section {
         width: 98vw;
