@@ -6,6 +6,7 @@
 
 body{
     height: 100vh;
+    width: 100%;
     background-color: #65e5ff;
     background-image: 
         radial-gradient(farthest-corner at 0px 0px, #e600ff 0%, #00d5ff00 60%),
@@ -14,7 +15,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: 'Lucida Sans', sans-serif;
-    font-size: 26px;
+    font-size: 18px;
 }
 
 header{
@@ -27,7 +28,7 @@ header{
 .menu {
     position: fixed;
     top: 0;
-    width: 100vw;
+    width: 100%;
 }
 
 .menu ul{
@@ -60,7 +61,7 @@ header{
 }
 
 .media i{
-    font-size: 60px;
+    font-size: 2.5em;
     margin: 5px;
 }
 
@@ -74,12 +75,18 @@ header{
 }
 
 .info{
-    margin-left: 10px;
-    margin-right: 10px;
+    text-align: justify;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.2em;
 }
 
 hr {
-    border-top: 1px solid #CCC;
+    border-top: 0;
+    border-bottom: 0;
+    background-color: black;
+    height: 1px;
     width: 50%;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -90,7 +97,6 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding:20px;
 }
 
 .about .avatar img{
@@ -102,7 +108,7 @@ hr {
     margin-left: 20px;
 }
 
-
+.projects p,
 .about p{
     text-align: justify;
     margin-top: 20px;
@@ -125,8 +131,7 @@ section {
 }
 
 h2 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-family: 'Balsamiq Sans','Lucida Sans', sans-serif;
 }
 
@@ -134,6 +139,7 @@ h2 {
     text-align: center;
     font-family: 'Balsamiq Sans','Lucida Sans', sans-serif;
     font-weight: bold;
+    font-size: 2.5em;
 }
 .full-size-img {
     width: 100%;
@@ -142,6 +148,7 @@ h2 {
 
 .project-img-right{
     display: flex;
+    flex-direction: row-reverse;
 }
 
 .project-trivia{
@@ -152,17 +159,12 @@ h2 {
 .trivia-imgs{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-}
-
-.trivia-img{
-    width: 24%;
-    height: auto;
+    justify-content: space-around;
 }
 
 #me-dojo{
-    max-height: 400px;
-    width: auto;
+    max-width: 350px;
+    margin-left: 20px;
 }
 .separation-dot {
     display: flex;
@@ -189,25 +191,25 @@ h2 {
 }
 
 .footer p {
-    font-size: 20px;
     color: gray;
+    text-align: center;
 }
 
 @media (min-width: 500px) {
-    .menu a {
-        font-size: 24px;
-    }
     section {
         width: 80vw;
+    }
+    .opaque-page {
+        padding: 5vw;
     }
 }
 
 @media (max-width: 500px) {
-    .menu a {
-        font-size: 14px;
-    }
     section {
         width: 98vw;
+    }
+    .opaque-page {
+        padding: 5px;
     }
 }
 
@@ -220,5 +222,29 @@ h2 {
     .about .avatar img{
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+@media (max-width: 1000px) {
+    #me-dojo{
+        max-width: 300px;
+        margin-left: 0;
+    }
+    .project-img-right {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 1300px) {
+    .trivia-img{
+        width: 49%;
+        height: auto;
+        margin-bottom: 5px;
+    }
+}
+@media (min-width: 1300px) {
+    .trivia-img{
+        width: 24%;
+        height: auto;
     }
 }
