@@ -127,6 +127,15 @@ hr {
     margin-top: 20px;
 }
 
+.projects a{
+    text-decoration: none;
+    color:blue;
+}
+.projects a:hover{
+    text-decoration: underline;
+    color:blue;
+}
+
 section {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -148,6 +157,12 @@ h2 {
 .full-size-img {
     width: 100%;
     height: auto;
+    margin-top:10px;
+}
+
+.justified-text{
+    text-align: justify;
+    margin-bottom: 10px;
 }
 
 .project-img-right{
@@ -164,6 +179,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-top: 10px;
 }
 
 #me-dojo{
