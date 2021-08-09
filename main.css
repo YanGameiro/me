@@ -160,6 +160,14 @@ h2 {
     margin-top:10px;
 }
 
+#png-testador{
+    max-width: 1547px;
+}
+
+#png-historico{
+    max-width: 892px;
+}
+
 .justified-text{
     text-align: justify;
     margin-bottom: 10px;
